@@ -1,0 +1,19 @@
+.Drawer-container {
+  width: var(--notification-width);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+}
+
+.Drawer-notifications {
+  position: absolute;
+  top: 10em;
+}
+
+.Drawer-notifications__icon {
+  position: absolute;
+  display: block;
+  left: calc(var(--notification-width)/2 - var(--icon-size));
+}

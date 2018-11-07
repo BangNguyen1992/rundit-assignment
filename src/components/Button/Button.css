@@ -1,0 +1,50 @@
+.Button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+
+  margin: 1em;
+  padding: 1em;
+
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 150ms linear;
+  -o-transition: all 150ms linear;
+  transition: all 150ms linear;
+  text-align: center;
+
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+  border: 1px solid var(--background-color);
+  border-radius: 4px;
+
+  font-size: var(--primary-font-size);
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Button:hover {
+  transform: scale(1.1);
+  border: 2px solid var(--background-color);
+  background-color: var(--background-color);
+  color: var(--font-color);
+  opacity: .85;
+}

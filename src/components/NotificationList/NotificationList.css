@@ -1,0 +1,64 @@
+.NotificationList-container {
+  position: absolute;
+  top: 4em;
+  line-height: 1.5;
+  color: var(--font-color);
+  width: var(--notification-width);
+  background-color: var(--background-color);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.NotificationList-container::before {
+  content: '';
+  position: absolute;
+  top: -1em;
+  left: calc(var(--notification-width)/2 - var(--icon-size) + 0.5em);
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+  border-bottom: 1em solid var(--light-gray);
+}
+
+.NotificationList-header {
+  border-bottom: 0.01em solid #eee;
+  background-color: var(--light-gray);
+}
+
+.NotificationList-header__title {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.NotificationList-header__badge {
+  display: flex;
+}
+
+.NotificationList-header__badge.c-badge {
+  top: 0em;
+  left: 0em;
+  position: relative;
+  /* height: 2em; */
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.NotificationList-empty-state {
+  height: 25em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.NotificationList-empty-state img {
+  max-height: 150px;
+}
+
+.NotificationList-content {
+  max-height: 20em;
+  overflow: auto;
+}

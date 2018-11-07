@@ -1,0 +1,19 @@
+.Notification-item {
+  min-height: 3em;
+}
+
+.Notification__image {
+  height: 3em;
+  width: 3em;
+  background: var(--light-gray);
+  padding: 0.5em;
+  border-radius: 100%;
+}
+
+.Notification__content {
+  padding-left: 1em;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
