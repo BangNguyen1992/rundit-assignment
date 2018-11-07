@@ -4,7 +4,7 @@
     <Button v-bind:clickHandler="ADD_NEW_NOTIFICATION" v-bind:buttonText="'Add new notification'" ></Button>
   
     <div class="Drawer-notifications">
-      <div v-on:click="toggleDrawerHandler" class="u-flex u-flex__center Drawer-notifications__icon">
+      <div v-on-clickaway="away" v-on:click="toggleDrawerHandler" class="u-flex u-flex__center Drawer-notifications__icon">
         <i class="c-icon c-icon__bell"></i>
         <span v-if="badgeNumber" class="c-badge">{{badgeNumber}}</span>
       </div>

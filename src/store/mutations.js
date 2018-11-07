@@ -5,6 +5,12 @@ export const mutations = {
 
     return state.drawerOpen = drawerOpen;
   },
+  CLOSE_DRAWER: (state) => {
+    let { drawerOpen } = state;
+    drawerOpen = false;
+
+    return state.drawerOpen = drawerOpen;
+  },
   SEE_ALL_NOTIFICATION: (state) => {
     const { notifications } = state;
     for (const notification of notifications) {
