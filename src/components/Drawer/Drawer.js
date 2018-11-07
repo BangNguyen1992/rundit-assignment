@@ -38,8 +38,10 @@ export default {
       }
     },
     away() {
+      if (this.drawerOpen === true) {
+        this.SEE_ALL_NOTIFICATION();
+      }
       this.CLOSE_DRAWER();
-      this.SEE_ALL_NOTIFICATION();
     },
   }
 };
