@@ -37,11 +37,11 @@ export default {
         this.SEE_ALL_NOTIFICATION();
       }
     },
-    away() {
-      if (this.drawerOpen === true) {
+    away(event) {
+      if (this.drawerOpen === true && event.target.className.includes('Home-container')) {
         this.SEE_ALL_NOTIFICATION();
+        this.CLOSE_DRAWER();
       }
-      this.CLOSE_DRAWER();
     },
   }
 };
